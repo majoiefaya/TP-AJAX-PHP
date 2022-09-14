@@ -1,0 +1,34 @@
+
+use casino;
+CREATE TABLE Joueur(
+    id_joueur INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL,
+    solde INT NOT NULL)ENGINE=INNODB;
+ 
+ 
+CREATE TABLE Niveau(
+    id_niveau INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    libelle VARCHAR(255) NOT NULL,
+    code INT NOT NULL)ENGINE=INNODB;
+    
+CREATE TABLE Tentative(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_joueur INT NOT NULL,
+    CONSTRAINT FK_id_joueur FOREIGN KEY (id_joueur)
+    REFERENCES Joueur (id_joueur),
+    id_niveau INT NOT NULL,
+   	CONSTRAINT FK_id_niveauTenta FOREIGN KEY (id_niveau)
+    REFERENCES Niveau (id_niveau),
+    mise INT NOT NULL,
+    NumeroTire INT NOT NULL,
+    gain INT NOT NULL,
+	Date DATE NOT NULL)ENGINE=INNODB;
+    
+CREATE TABLE Regles(
+    id_regle INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Description VARCHAR(255) NOT NULL,
+    id_niveau INT NOT NULL,
+    CONSTRAINT FK_id_niveauRegle FOREIGN KEY (id_niveau)
+    REFERENCES Niveau (id_niveau))ENGINE=INNODB;
+    

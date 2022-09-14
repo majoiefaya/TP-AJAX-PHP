@@ -1,0 +1,16 @@
+#info {
+    text-align: center;
+    padding: 100px;
+    visibility: hidden;
+}
+
+#form {
+    text-align: center;
+}
+
+#charge {
+    position: absolute;
+    left: 310px;
+    top: 50;
+    visibility: hidden;
+}

@@ -1,0 +1,31 @@
+.button{
+    border:1px solid #ffffff;
+    background-color:#0072ce;
+    color:white;
+    border-radius:20px;
+    padding-top:6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right:10px;
+    text-decoration: none;
+    margin-left:85px;
+    font-size:18px;
+    font-family: var(--dk-font);
+    z-index: 3;
+    left:85px;
+    top:250px;
+    position:absolute;
+}
+.Police{
+    font-family: 'Dancing Script', 'cursive';
+    font-weight: bold;
+    color:rgb(49, 47, 47);
+    font-family: var(--dk-font);
+    letter-spacing: .1rem;
+}
+#charge{
+    position:absolute;
+    left:310px;
+    Top:50px;
+    visibility:hidden;
+}

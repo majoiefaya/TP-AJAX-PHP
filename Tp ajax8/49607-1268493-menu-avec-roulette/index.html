@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+<script type="text/javascript" src="javascript.js">
+</script>
+<title>Roulette</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head><body>
+
+<div class="conteneur"><div class="roulette" OnMouseMove="knowleftright();"></div><div  class="bouton" OnMouseDown="this.style.background='#B0AA00';" title="Atteindre" OnMouseUp="location.href=document.getElementById('elementmain'+getNumber()).title;this.style.background='yellow'">&nbsp;</div><a style="" id=elementmain1 class=elementfocus title="javascript:alert('Vers la section musique');">Musique</a>
+<div class=element id=elementmain2 title="javascript:alert('Vers la section vidéo');">Vidéo</div><div style="" class=element id=elementmain3 title="javascript:alert('Vers la section photo');">Photo</div><div class=element id=elementmain4 title="javascript:alert('Vers la section radio');">FM</div><div style="" class=element id=elementmain5 title="javascript:window.open('http://www.javascriptfr.com');">JavascriptFr</div><br><br><br><br><br><br><br></div><br><br><b>La destination doit être mis dans l'attribut TITLE</b><br><!--[if IE]>
+ <b>Pour de meilleurs résultats, veuillez utiliser Safari ou Firefox</b>
+<![endif]--><ol><li><b>Si la souris est sur la roulette, on récupère la position du curseur</b>
+</li><li><b>La roulette est séparé en 4 parties. On trouve dans quelle partie se trouve la souris</b>
+</li><li><b>En fonction de la précédente zone où se trouvait la souris, cela monte ou descent. Donc, on change la class de la zone sélectionné et on change celle au-dessus ou au -dessous</b>
+</li><li><b>On ne monte ou dessous que si le curseur a changé de zone. Donc 4 fois en un tour.</b>
+</li><li><b>Lors du clic sur le bouton centrale, on change la destination de la page par le titre de la zone sélectionné. Vous pouvez donc commencé le titre par "javascript:" pour créer un élément javascript.</b>
+</li></ol>
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-html401"
+        alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
+
+</body>
+</html>

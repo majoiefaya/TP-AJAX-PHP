@@ -1,0 +1,32 @@
+    #body {
+        background-color: khaki;
+    }
+    
+    #body_un {
+        background-color: lightcoral;
+    }
+    
+    #bienvenue {
+        text-align: center;
+    }
+    
+    #regle {
+        text-align: center;
+    }
+    
+    #formulaire {
+        position: absolute;
+        text-align: center;
+        left: 470px;
+        top: 250px;
+    }
+    
+    #commencer {
+        position: absolute;
+        left: 400px;
+    }
+    
+    #info {
+        text-align: center;
+        visibility: hidden;
+    }
